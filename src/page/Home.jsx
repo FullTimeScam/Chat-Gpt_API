@@ -1,8 +1,15 @@
 const Home = () => {
+  const onSubmitChat = (e) => {
+    e.preventDefault();
+    console.log(e);
+  };
+
   return (
     <div>
-      <input type="text" />
-      <input type="submit" />
+      <form onSubmit={onSubmitChat}>
+        <input type="text" />
+        <input type="submit" />
+      </form>
     </div>
   );
 };
