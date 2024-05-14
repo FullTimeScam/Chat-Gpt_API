@@ -8,6 +8,7 @@ const Home = () => {
     //text에 질문을 입력 받아서 서버로 보내주는 작업이 필요함
   };
   const onChangeContent = (e) => {
+    setContent(e.target.value);
     console.log(e.target.value);
   };
 
