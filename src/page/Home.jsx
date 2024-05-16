@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { TbRobot } from "react-icons/tb";
 
 const Home = () => {
   const [content, setContent] = useState("");
@@ -18,11 +19,13 @@ const Home = () => {
           value={content}
           onChange={(e) => setContent(e.target.value)}
         />
-        <input
-          className="ml-4 bg-orange-200 text-2xl px-4 py-[10px] rounded-full shadow-md shadow-orange-300 hover:bg-blue-500 focus:bg-green-500"
+
+        <button
+          className="ml-4 bg-orange-200 text-2xl px-4 py-[10px] rounded-full shadow-md shadow-orange-300 hover:bg-orange-300"
           type="submit"
-          value="질문하기"
-        />
+        >
+          <TbRobot /> 검색
+        </button>
       </form>
     </div>
   );
